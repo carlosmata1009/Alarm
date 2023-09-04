@@ -7,18 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170DD1FF2A80FD2E009EB076 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DD1FE2A80FD2E009EB076 /* ProfileView.swift */; };
+		170DD2012A80FDA4009EB076 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DD2002A80FDA4009EB076 /* MainTabView.swift */; };
+		171770092A81350200DB6493 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171770082A81350200DB6493 /* User.swift */; };
+		1717700C2A81365500DB6493 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1717700B2A81365500DB6493 /* FirebaseAuth */; };
+		1717700E2A81365500DB6493 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1717700D2A81365500DB6493 /* FirebaseFirestore */; };
+		171770102A81365500DB6493 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1717700F2A81365500DB6493 /* FirebaseFirestoreSwift */; };
+		171770122A81365500DB6493 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 171770112A81365500DB6493 /* FirebaseFunctions */; };
+		171770142A81365500DB6493 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 171770132A81365500DB6493 /* FirebaseMessaging */; };
+		171770162A81365500DB6493 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 171770152A81365500DB6493 /* FirebaseStorage */; };
+		172803C42A9B69BF00F7EFC0 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */; };
+		1739DFD32A80F366009DBCCF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1739DFD22A80F366009DBCCF /* AuthViewModel.swift */; };
+		17430E4F2AA0F8F600665EA8 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17430E4E2AA0F8F600665EA8 /* CustomButtonStyle.swift */; };
 		174AF1272A80155E00A2DEA7 /* AlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1262A80155E00A2DEA7 /* AlarmApp.swift */; };
 		174AF1292A80155E00A2DEA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1282A80155E00A2DEA7 /* ContentView.swift */; };
 		174AF12B2A80155E00A2DEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174AF12A2A80155E00A2DEA7 /* Assets.xcassets */; };
 		174AF12E2A80155E00A2DEA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174AF12D2A80155E00A2DEA7 /* Preview Assets.xcassets */; };
+		174AF13E2A80204100A2DEA7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF13D2A80204100A2DEA7 /* RegistrationView.swift */; };
+		174AF1402A80205000A2DEA7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF13F2A80205000A2DEA7 /* LoginView.swift */; };
+		174AF1422A80206100A2DEA7 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1412A80206100A2DEA7 /* ResetPasswordView.swift */; };
+		174AF1452A80246600A2DEA7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1442A80246600A2DEA7 /* CustomTextField.swift */; };
+		174AF1482A80249200A2DEA7 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1472A80249200A2DEA7 /* CustomSecureField.swift */; };
+		176AA7EE2A8667FB00502958 /* JsonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA7ED2A8667FB00502958 /* JsonActions.swift */; };
+		17914C0B2A8F717400912ADE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17914C0A2A8F717400912ADE /* GoogleService-Info.plist */; };
+		179BB50A2A9504C600217E83 /* AlarmActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BB5092A9504C600217E83 /* AlarmActions.swift */; };
+		179CE56F2AA1E832005169CB /* validInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CE56E2AA1E832005169CB /* validInformation.swift */; };
+		17C65F862A94025900936FFA /* CustomTextFieldAddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */; };
+		17CB58F62A84F76500722F4C /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB58F52A84F76500722F4C /* AlarmModel.swift */; };
+		17DA96D22A82AE94001D2DC9 /* AlarmPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170DD1FE2A80FD2E009EB076 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		170DD2002A80FDA4009EB076 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		171770082A81350200DB6493 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
+		1739DFD22A80F366009DBCCF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		17430E4E2AA0F8F600665EA8 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		174AF1232A80155E00A2DEA7 /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174AF1262A80155E00A2DEA7 /* AlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmApp.swift; sourceTree = "<group>"; };
 		174AF1282A80155E00A2DEA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		174AF12A2A80155E00A2DEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174AF12D2A80155E00A2DEA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		174AF13D2A80204100A2DEA7 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		174AF13F2A80205000A2DEA7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		174AF1412A80206100A2DEA7 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		174AF1442A80246600A2DEA7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		174AF1472A80249200A2DEA7 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		174E0B592A9CAD890055F306 /* song.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = song.aiff; sourceTree = "<group>"; };
+		176AA7ED2A8667FB00502958 /* JsonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonActions.swift; sourceTree = "<group>"; };
+		17914C0A2A8F717400912ADE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		179BB5092A9504C600217E83 /* AlarmActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmActions.swift; sourceTree = "<group>"; };
+		179CE56E2AA1E832005169CB /* validInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validInformation.swift; sourceTree = "<group>"; };
+		17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldAddAlarm.swift; sourceTree = "<group>"; };
+		17CB58F52A84F76500722F4C /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPopoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +69,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1717700C2A81365500DB6493 /* FirebaseAuth in Frameworks */,
+				1717700E2A81365500DB6493 /* FirebaseFirestore in Frameworks */,
+				171770142A81365500DB6493 /* FirebaseMessaging in Frameworks */,
+				171770102A81365500DB6493 /* FirebaseFirestoreSwift in Frameworks */,
+				171770122A81365500DB6493 /* FirebaseFunctions in Frameworks */,
+				171770162A81365500DB6493 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170DD1FD2A80FD23009EB076 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				170DD1FE2A80FD2E009EB076 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1739DFCD2A80F1B2009DBCCF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1739DFD22A80F366009DBCCF /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		174AF11A2A80155E00A2DEA7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +116,14 @@
 		174AF1252A80155E00A2DEA7 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				174AF1432A80245800A2DEA7 /* Utils */,
+				174AF1372A80158A00A2DEA7 /* API */,
+				174AF1362A80158200A2DEA7 /* ViewModel */,
+				174AF1352A80157000A2DEA7 /* Model */,
+				174AF1342A80156600A2DEA7 /* View */,
 				174AF1262A80155E00A2DEA7 /* AlarmApp.swift */,
-				174AF1282A80155E00A2DEA7 /* ContentView.swift */,
 				174AF12A2A80155E00A2DEA7 /* Assets.xcassets */,
+				17914C0A2A8F717400912ADE /* GoogleService-Info.plist */,
 				174AF12C2A80155E00A2DEA7 /* Preview Content */,
 			);
 			path = Alarm;
@@ -65,6 +135,100 @@
 				174AF12D2A80155E00A2DEA7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		174AF1342A80156600A2DEA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				170DD1FD2A80FD23009EB076 /* Profile */,
+				174AF13C2A80202000A2DEA7 /* Authentication */,
+				174AF13A2A80183500A2DEA7 /* Home */,
+				174AF13B2A80187E00A2DEA7 /* Alarm */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		174AF1352A80157000A2DEA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				171770082A81350200DB6493 /* User.swift */,
+				17CB58F52A84F76500722F4C /* AlarmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		174AF1362A80158200A2DEA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				179BB5062A94FFE000217E83 /* AlarmVM */,
+				1739DFCD2A80F1B2009DBCCF /* Authentication */,
+				176AA7ED2A8667FB00502958 /* JsonActions.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		174AF1372A80158A00A2DEA7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		174AF13A2A80183500A2DEA7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				174AF1282A80155E00A2DEA7 /* ContentView.swift */,
+				170DD2002A80FDA4009EB076 /* MainTabView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		174AF13B2A80187E00A2DEA7 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		174AF13C2A80202000A2DEA7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				174AF13D2A80204100A2DEA7 /* RegistrationView.swift */,
+				174AF13F2A80205000A2DEA7 /* LoginView.swift */,
+				174AF1412A80206100A2DEA7 /* ResetPasswordView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		174AF1432A80245800A2DEA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				174AF1442A80246600A2DEA7 /* CustomTextField.swift */,
+				174AF1472A80249200A2DEA7 /* CustomSecureField.swift */,
+				17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */,
+				17430E4E2AA0F8F600665EA8 /* CustomButtonStyle.swift */,
+				179CE56E2AA1E832005169CB /* validInformation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		174E0B582A9CAD780055F306 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				174E0B592A9CAD890055F306 /* song.aiff */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		179BB5062A94FFE000217E83 /* AlarmVM */ = {
+			isa = PBXGroup;
+			children = (
+				179BB5092A9504C600217E83 /* AlarmActions.swift */,
+				174E0B582A9CAD780055F306 /* sound */,
+				172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */,
+			);
+			path = AlarmVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +247,14 @@
 			dependencies = (
 			);
 			name = Alarm;
+			packageProductDependencies = (
+				1717700B2A81365500DB6493 /* FirebaseAuth */,
+				1717700D2A81365500DB6493 /* FirebaseFirestore */,
+				1717700F2A81365500DB6493 /* FirebaseFirestoreSwift */,
+				171770112A81365500DB6493 /* FirebaseFunctions */,
+				171770132A81365500DB6493 /* FirebaseMessaging */,
+				171770152A81365500DB6493 /* FirebaseStorage */,
+			);
 			productName = Alarm;
 			productReference = 174AF1232A80155E00A2DEA7 /* Alarm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 174AF11A2A80155E00A2DEA7;
+			packageReferences = (
+				1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 174AF1242A80155E00A2DEA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				174AF12E2A80155E00A2DEA7 /* Preview Assets.xcassets in Resources */,
+				17914C0B2A8F717400912ADE /* GoogleService-Info.plist in Resources */,
 				174AF12B2A80155E00A2DEA7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +313,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17430E4F2AA0F8F600665EA8 /* CustomButtonStyle.swift in Sources */,
+				174AF1482A80249200A2DEA7 /* CustomSecureField.swift in Sources */,
+				174AF13E2A80204100A2DEA7 /* RegistrationView.swift in Sources */,
+				17C65F862A94025900936FFA /* CustomTextFieldAddAlarm.swift in Sources */,
+				170DD1FF2A80FD2E009EB076 /* ProfileView.swift in Sources */,
 				174AF1292A80155E00A2DEA7 /* ContentView.swift in Sources */,
+				174AF1452A80246600A2DEA7 /* CustomTextField.swift in Sources */,
+				17DA96D22A82AE94001D2DC9 /* AlarmPopoverView.swift in Sources */,
+				179CE56F2AA1E832005169CB /* validInformation.swift in Sources */,
+				170DD2012A80FDA4009EB076 /* MainTabView.swift in Sources */,
+				1739DFD32A80F366009DBCCF /* AuthViewModel.swift in Sources */,
+				174AF1422A80206100A2DEA7 /* ResetPasswordView.swift in Sources */,
+				176AA7EE2A8667FB00502958 /* JsonActions.swift in Sources */,
+				179BB50A2A9504C600217E83 /* AlarmActions.swift in Sources */,
+				171770092A81350200DB6493 /* User.swift in Sources */,
+				174AF1402A80205000A2DEA7 /* LoginView.swift in Sources */,
 				174AF1272A80155E00A2DEA7 /* AlarmApp.swift in Sources */,
+				17CB58F62A84F76500722F4C /* AlarmModel.swift in Sources */,
+				172803C42A9B69BF00F7EFC0 /* UserNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,17 +463,19 @@
 				DEVELOPMENT_TEAM = KBZTX6B436;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = carlosMata.Alarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosMata.Alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,17 +494,19 @@
 				DEVELOPMENT_TEAM = KBZTX6B436;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = carlosMata.Alarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosMata.Alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +536,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1717700B2A81365500DB6493 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1717700D2A81365500DB6493 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		1717700F2A81365500DB6493 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		171770112A81365500DB6493 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		171770132A81365500DB6493 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		171770152A81365500DB6493 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1717700A2A81365500DB6493 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 174AF11B2A80155E00A2DEA7 /* Project object */;
 }
