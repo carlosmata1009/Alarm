@@ -7,18 +7,23 @@
 
 import SwiftUI
 import Firebase
+import AVFoundation
 
 @main
 struct AlarmApp: App {
+    
+    @StateObject var userNotifications = UserNotifications()
+    
     init(){
         FirebaseApp.configure()
     }
-    @StateObject var userNotifications = UserNotifications()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(AuthViewModel.shared)
                 .environmentObject(userNotifications)
         }
+        
     }
 }

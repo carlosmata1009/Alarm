@@ -18,6 +18,7 @@ struct ProfileView: View {
     @State private var newPassword: String = ""
     @State private var fullname: String = ""
     @State private var username: String = ""
+    @Environment(\.scenePhase) var scenePhase
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
@@ -135,9 +136,4 @@ struct ProfileView: View {
         }
     }
 }
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView(user: User(fullname: "carlos", email: "email", alarms: [Alarm(date: "", ringtone: "", nameOfAlarm: "", activated: true, repeatedDays: [])]))
-            .environmentObject(AuthViewModel.shared)
-    }
-}
+

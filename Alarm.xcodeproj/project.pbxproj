@@ -35,12 +35,14 @@
 		17C65F862A94025900936FFA /* CustomTextFieldAddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */; };
 		17CB58F62A84F76500722F4C /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB58F52A84F76500722F4C /* AlarmModel.swift */; };
 		17DA96D22A82AE94001D2DC9 /* AlarmPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */; };
+		17EA4C4E2AA8E903000CDA18 /* song.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17EA4C4D2AA8E903000CDA18 /* song.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170DD1FE2A80FD2E009EB076 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		170DD2002A80FDA4009EB076 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		171770082A81350200DB6493 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		171D49A22AA7845A00455138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		1739DFD22A80F366009DBCCF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		17430E4E2AA0F8F600665EA8 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 		174AF1412A80206100A2DEA7 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		174AF1442A80246600A2DEA7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		174AF1472A80249200A2DEA7 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
-		174E0B592A9CAD890055F306 /* song.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = song.aiff; sourceTree = "<group>"; };
 		176AA7ED2A8667FB00502958 /* JsonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonActions.swift; sourceTree = "<group>"; };
 		17914C0A2A8F717400912ADE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		179BB5092A9504C600217E83 /* AlarmActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmActions.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldAddAlarm.swift; sourceTree = "<group>"; };
 		17CB58F52A84F76500722F4C /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPopoverView.swift; sourceTree = "<group>"; };
+		17EA4C4D2AA8E903000CDA18 /* song.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = song.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,14 @@
 				170DD1FE2A80FD2E009EB076 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		171D49AA2AA797DE00455138 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17EA4C4D2AA8E903000CDA18 /* song.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1739DFCD2A80F1B2009DBCCF /* Authentication */ = {
@@ -116,6 +126,8 @@
 		174AF1252A80155E00A2DEA7 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				171D49AA2AA797DE00455138 /* Resources */,
+				171D49A22AA7845A00455138 /* Info.plist */,
 				174AF1432A80245800A2DEA7 /* Utils */,
 				174AF1372A80158A00A2DEA7 /* API */,
 				174AF1362A80158200A2DEA7 /* ViewModel */,
@@ -213,19 +225,10 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		174E0B582A9CAD780055F306 /* sound */ = {
-			isa = PBXGroup;
-			children = (
-				174E0B592A9CAD890055F306 /* song.aiff */,
-			);
-			path = sound;
-			sourceTree = "<group>";
-		};
 		179BB5062A94FFE000217E83 /* AlarmVM */ = {
 			isa = PBXGroup;
 			children = (
 				179BB5092A9504C600217E83 /* AlarmActions.swift */,
-				174E0B582A9CAD780055F306 /* sound */,
 				172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */,
 			);
 			path = AlarmVM;
@@ -303,6 +306,7 @@
 				174AF12E2A80155E00A2DEA7 /* Preview Assets.xcassets in Resources */,
 				17914C0B2A8F717400912ADE /* GoogleService-Info.plist in Resources */,
 				174AF12B2A80155E00A2DEA7 /* Assets.xcassets in Resources */,
+				17EA4C4E2AA8E903000CDA18 /* song.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +467,7 @@
 				DEVELOPMENT_TEAM = KBZTX6B436;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarm/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -494,6 +499,7 @@
 				DEVELOPMENT_TEAM = KBZTX6B436;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarm/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

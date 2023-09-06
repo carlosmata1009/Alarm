@@ -6,8 +6,11 @@
 //
 
 import UserNotifications
+import AVFoundation
 
 class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDelegate {
+    
+    
     //Notifications auth
     func requestAuthorizationToUser(){
         let center = UNUserNotificationCenter.current()
@@ -21,7 +24,10 @@ class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDel
             }
         }
     }
+    
     func pushNotification(arrayOfAlarms: [Alarm]){
+        self.requestAuthorizationToUser()
+        
         let center = UNUserNotificationCenter.current()
         center.getNotificationSettings { settings in
             guard (settings.authorizationStatus == .authorized) else { return }
@@ -29,28 +35,31 @@ class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDel
             if settings.alertSetting == .enabled {
                 
                 for alarm in arrayOfAlarms{
-                    let content = UNMutableNotificationContent()
                     
-                    content.title = alarm.nameOfAlarm
-                    content.body = "Alarm"
-                    content.sound = .defaultRingtone
-                    
-                    let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "HH:mm"
-                    let alarmFormatted = dateFormatter.date(from: alarm.date)
-                    
-                    let calendar = Calendar.current
-                    let dateComponents = calendar.dateComponents([.hour, .minute], from: alarmFormatted ?? Date())
-                    
-                    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-                    let request = UNNotificationRequest(identifier: alarm.id, content: content, trigger: trigger)
-                    
-                    center.add(request) { (error) in
-                        if let error = error {
-                            print("Error scheduling notification: \(alarm.id)")
-                        } else {
-                            print("Notification scheduled successfully \(alarm.date)")
+                    if let _ = Bundle.main.url(forResource: "song", withExtension: "wav") {
+                        let content = UNMutableNotificationContent()
+                        content.title = alarm.nameOfAlarm
+                        content.body = "Alarm"
+                        content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "song.wav"))
+
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "HH:mm"
+                        let alarmFormatted = dateFormatter.date(from: alarm.date)
+                        
+                        let calendar = Calendar.current
+                        let dateComponents = calendar.dateComponents([.hour, .minute], from: alarmFormatted ?? Date())
+                        
+                        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+                        let request = UNNotificationRequest(identifier: alarm.id, content: content, trigger: trigger)
+                        center.add(request) { (error) in
+                            if let error = error {
+                                print("Error scheduling notification: \(alarm.id)")
+                            } else {
+                                print("Notification scheduled successfully \(alarm.date)")
+                            }
                         }
+                    }else{
+                        print("Not found")
                     }
                 }
             } else {
