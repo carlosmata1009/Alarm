@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://D679AF7F-BECE-4574-859A-A8C1AFFD2759</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>DVTDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Bookmark “Build Alarm - Log”</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://D679AF7F-BECE-4574-859A-A8C1AFFD2759</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>DVTDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Bookmark “Build Alarm - Log”</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>XcodeLocation</key>
+					<string>{"ExpandTranscript":true,"IndexPath":[17,52,0]}</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://24664E70-994B-4E08-B90C-117C97575542</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>IDELogDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Warning: Ignoring duplicate libraries: '-lc++'</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>XcodeLocation</key>
+					<string>{"ExpandTranscript":true,"IndexPath":[17,52,0]}</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://24664E70-994B-4E08-B90C-117C97575542</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>IDELogDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Warning: Ignoring duplicate libraries: '-lc++'</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>XcodeLocation</key>
+					<string>{"ExpandTranscript":true,"IndexPath":[17,52,0]}</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://24664E70-994B-4E08-B90C-117C97575542</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>IDELogDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Warning: Ignoring duplicate libraries: '-lc++'</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>

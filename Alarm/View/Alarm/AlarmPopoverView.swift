@@ -11,6 +11,7 @@ struct AlarmPopoverView: View {
     @State var newAlarm = Alarm(date: "", ringtone: "", nameOfAlarm: "", activated: true, repeatedDays: [""])
     @State var alarms: [Alarm] = []
     @EnvironmentObject var userNotifications: UserNotifications
+    private var managerAudio = ManagerAudioBackground()
     
     var body: some View {
         
@@ -73,9 +74,7 @@ struct AlarmPopoverView: View {
                             //Cancel Button
                             ToolbarItem(placement: .navigationBarLeading){
                                 Button(action: {
-
                                     self.isPopoverPresented = false
-                                    
                                 }, label:{
                                     Text("Cancel")
                                         .foregroundColor(.black)
@@ -89,10 +88,10 @@ struct AlarmPopoverView: View {
                                     self.newAlarm = newAlarm
                                     AlarmActions().saveAlarm(alarm: newAlarm)
                                     self.isPopoverPresented = false
-                                    
                                     Task{
-                                        await refreshAlarms()
                                         userNotifications.pushNotification(arrayOfAlarms: alarms)
+                                        await refreshAlarms()
+                                        
                                     }
                                 }, label:{
                                     Text("Save")

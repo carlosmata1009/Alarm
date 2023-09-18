@@ -18,7 +18,6 @@ struct ProfileView: View {
     @State private var newPassword: String = ""
     @State private var fullname: String = ""
     @State private var username: String = ""
-    @Environment(\.scenePhase) var scenePhase
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {

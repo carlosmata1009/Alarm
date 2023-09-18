@@ -29,13 +29,14 @@
 		174AF1452A80246600A2DEA7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1442A80246600A2DEA7 /* CustomTextField.swift */; };
 		174AF1482A80249200A2DEA7 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AF1472A80249200A2DEA7 /* CustomSecureField.swift */; };
 		176AA7EE2A8667FB00502958 /* JsonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA7ED2A8667FB00502958 /* JsonActions.swift */; };
+		1783D2A02AAA030400DF9496 /* ManagerAudioBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783D29F2AAA030400DF9496 /* ManagerAudioBackground.swift */; };
 		17914C0B2A8F717400912ADE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17914C0A2A8F717400912ADE /* GoogleService-Info.plist */; };
+		17946D182AAF29D1009AA1AE /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17946D172AAF29D1009AA1AE /* song.mp3 */; };
 		179BB50A2A9504C600217E83 /* AlarmActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BB5092A9504C600217E83 /* AlarmActions.swift */; };
 		179CE56F2AA1E832005169CB /* validInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CE56E2AA1E832005169CB /* validInformation.swift */; };
 		17C65F862A94025900936FFA /* CustomTextFieldAddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */; };
 		17CB58F62A84F76500722F4C /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB58F52A84F76500722F4C /* AlarmModel.swift */; };
 		17DA96D22A82AE94001D2DC9 /* AlarmPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */; };
-		17EA4C4E2AA8E903000CDA18 /* song.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17EA4C4D2AA8E903000CDA18 /* song.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +58,14 @@
 		174AF1442A80246600A2DEA7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		174AF1472A80249200A2DEA7 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		176AA7ED2A8667FB00502958 /* JsonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonActions.swift; sourceTree = "<group>"; };
+		1783D29F2AAA030400DF9496 /* ManagerAudioBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerAudioBackground.swift; sourceTree = "<group>"; };
 		17914C0A2A8F717400912ADE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		17946D172AAF29D1009AA1AE /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		179BB5092A9504C600217E83 /* AlarmActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmActions.swift; sourceTree = "<group>"; };
 		179CE56E2AA1E832005169CB /* validInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validInformation.swift; sourceTree = "<group>"; };
 		17C65F852A94025900936FFA /* CustomTextFieldAddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldAddAlarm.swift; sourceTree = "<group>"; };
 		17CB58F52A84F76500722F4C /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		17DA96D12A82AE94001D2DC9 /* AlarmPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPopoverView.swift; sourceTree = "<group>"; };
-		17EA4C4D2AA8E903000CDA18 /* song.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = song.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,7 @@
 		171D49AA2AA797DE00455138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				17EA4C4D2AA8E903000CDA18 /* song.wav */,
+				17946D172AAF29D1009AA1AE /* song.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -127,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				171D49AA2AA797DE00455138 /* Resources */,
-				171D49A22AA7845A00455138 /* Info.plist */,
 				174AF1432A80245800A2DEA7 /* Utils */,
 				174AF1372A80158A00A2DEA7 /* API */,
 				174AF1362A80158200A2DEA7 /* ViewModel */,
@@ -136,6 +137,7 @@
 				174AF1262A80155E00A2DEA7 /* AlarmApp.swift */,
 				174AF12A2A80155E00A2DEA7 /* Assets.xcassets */,
 				17914C0A2A8F717400912ADE /* GoogleService-Info.plist */,
+				171D49A22AA7845A00455138 /* Info.plist */,
 				174AF12C2A80155E00A2DEA7 /* Preview Content */,
 			);
 			path = Alarm;
@@ -230,6 +232,7 @@
 			children = (
 				179BB5092A9504C600217E83 /* AlarmActions.swift */,
 				172803C32A9B69BF00F7EFC0 /* UserNotifications.swift */,
+				1783D29F2AAA030400DF9496 /* ManagerAudioBackground.swift */,
 			);
 			path = AlarmVM;
 			sourceTree = "<group>";
@@ -270,7 +273,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					174AF1222A80155E00A2DEA7 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -304,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				174AF12E2A80155E00A2DEA7 /* Preview Assets.xcassets in Resources */,
+				17946D182AAF29D1009AA1AE /* song.mp3 in Resources */,
 				17914C0B2A8F717400912ADE /* GoogleService-Info.plist in Resources */,
 				174AF12B2A80155E00A2DEA7 /* Assets.xcassets in Resources */,
-				17EA4C4E2AA8E903000CDA18 /* song.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1783D2A02AAA030400DF9496 /* ManagerAudioBackground.swift in Sources */,
 				17430E4F2AA0F8F600665EA8 /* CustomButtonStyle.swift in Sources */,
 				174AF1482A80249200A2DEA7 /* CustomSecureField.swift in Sources */,
 				174AF13E2A80204100A2DEA7 /* RegistrationView.swift in Sources */,
@@ -346,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -378,6 +383,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -406,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -438,6 +445,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

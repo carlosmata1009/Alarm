@@ -26,6 +26,7 @@ class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDel
     }
     
     func pushNotification(arrayOfAlarms: [Alarm]){
+        print(arrayOfAlarms)
         self.requestAuthorizationToUser()
         
         let center = UNUserNotificationCenter.current()
@@ -36,7 +37,7 @@ class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDel
                 
                 for alarm in arrayOfAlarms{
                     
-                    if let _ = Bundle.main.url(forResource: "song", withExtension: "wav") {
+                    if let _ = Bundle.main.url(forResource: "song", withExtension: "mp3") {
                         let content = UNMutableNotificationContent()
                         content.title = alarm.nameOfAlarm
                         content.body = "Alarm"
@@ -51,9 +52,9 @@ class UserNotifications: NSObject, ObservableObject, UNUserNotificationCenterDel
                         
                         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
                         let request = UNNotificationRequest(identifier: alarm.id, content: content, trigger: trigger)
-                        center.add(request) { (error) in
+                        center.add(request) { error in
                             if let error = error {
-                                print("Error scheduling notification: \(alarm.id)")
+                                print("Error scheduling notification: \(alarm.id), \(error.localizedDescription)")
                             } else {
                                 print("Notification scheduled successfully \(alarm.date)")
                             }

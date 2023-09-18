@@ -19,6 +19,7 @@ class AlarmActions: ObservableObject{
         
         guard let uid = userSession?.uid else{return}
         let db = Firestore.firestore().collection("users").document(uid)
+        
         db.updateData([
             "alarms": FieldValue.arrayUnion([alarm.dictionary])
         ]){ err in
@@ -27,15 +28,71 @@ class AlarmActions: ObservableObject{
             } else {
                 print("Document successfully updated")
             }
-            
+        }
+    }
+    func actualHourAndMinutesInSeconds()-> TimeInterval{
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
+        let calendar = Calendar.current
+        let currentDate = Date()
+        
+        let hour = TimeInterval(calendar.component(.hour, from: currentDate))
+        let minute = TimeInterval(calendar.component(.minute, from: currentDate))
+        let seconds = TimeInterval(calendar.component(.second, from: currentDate))
+        
+        let segundosHoras = TimeInterval(hour * 60 * 60)
+        let segundosMinutos = TimeInterval(minute * 60)
+        
+        let secondsTotal = segundosHoras + segundosMinutos + seconds
+        
+        return TimeInterval(secondsTotal)
+    }
+    
+    func fetchFieldsdOfAlarms() async throws -> [(id: String, seconds: TimeInterval)]{
+        
+        var arrayOfIdsAndActivated: [(id: String, date: String, value: Bool)] = []
+        var arrayOfSecondsAndId: [(id: String, seconds: TimeInterval)] = []
+        let ArrayOfAlarms = try await loadAlarms()
+        let dayInSeconds = TimeInterval(60 * 60 * 24)
+       
+        for alarm in ArrayOfAlarms{
+            if alarm.activated{
+                arrayOfIdsAndActivated.append((alarm.id, alarm.date, alarm.activated))
+            }
         }
         
+        for alarm in arrayOfIdsAndActivated {
+            
+            let components = alarm.date.split(separator: ":")
+            let hoursAlarm = TimeInterval(components[0])
+            let minutesAlarm = TimeInterval(components[1])
+            let segundosHoras = hoursAlarm! * 60 * 60
+            let segundosMinutos = minutesAlarm! * 60
+        
+            let dateInSeconds = segundosHoras + segundosMinutos
+            
+            let actualTimeSeconds = actualHourAndMinutesInSeconds()
+            
+            if(dateInSeconds > actualTimeSeconds){
+                let diffenceOfSeconds = dateInSeconds - actualTimeSeconds
+                print(diffenceOfSeconds)
+                arrayOfSecondsAndId.append((id: alarm.id, seconds: TimeInterval(diffenceOfSeconds)))
+            }else{
+                let diffenceOfSeconds = (dayInSeconds - actualTimeSeconds) + dateInSeconds
+                print(diffenceOfSeconds)
+                arrayOfSecondsAndId.append((id: alarm.id, seconds: TimeInterval(diffenceOfSeconds)))
+            }
+        }
+        
+        return arrayOfSecondsAndId
     }
 
     func loadAlarms() async throws -> [Alarm] {
         let uid = (userSession?.uid) ?? "23456754321"
         let db = Firestore.firestore().collection("users").document(uid)
-
+        
         do {
             let document = try await db.getDocument()
 
